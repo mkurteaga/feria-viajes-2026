@@ -1,0 +1,54 @@
+<!--En esta página, lo mismo, se repite el menú y aparece un formulario para poder rellenar y enviar por correo-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Feria de Viajes 2026</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+  <header>
+    <img src="imagenes/logo.png" alt="Logo Feria de Viajes" class="logo">
+	<h1>Contáctanos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario de contacto</h2>
+      <p>Si deseas más información sobre la Feria de Viajes 2026, completa el siguiente formulario y nos pondremos en contacto contigo.</p>
+
+      <form action="mailto:info@feriadeviajes2026.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="asunto">Asunto:</label><br>
+        <input type="text" id="asunto" name="asunto"><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Feria de Viajes - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
